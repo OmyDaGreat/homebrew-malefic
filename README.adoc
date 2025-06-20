@@ -1,0 +1,39 @@
+= Homebrew Malefic Tap
+:toc:
+:icons: font
+
+This is a https://brew.sh[Homebrew] tap for Malefic software, including the `mfc` terminal application.
+
+== How to Use
+
+To use this tap and install `mfc`:
+
+[source,shell]
+----
+brew tap OmyDaGreat/malefic
+brew install mfc
+----
+
+== Formulae
+
+- `mfc` :: A multi-use general purpose terminal application written in Kotlin.
+
+== Updating
+
+Formulae in this tap are updated automatically on new releases.
+If you need the latest version, run:
+
+[source,shell]
+----
+brew update
+brew upgrade mfc
+----
+
+== Contributing
+
+Pull requests to add or update formulae are welcome!
+Please ensure formulae follow Homebrew best practices.
+
+== License
+
+This tap and all included formulae are released under the MIT License, as shown in link:LICENSE[].
