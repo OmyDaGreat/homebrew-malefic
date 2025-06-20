@@ -5,15 +5,22 @@ class Mfc < Formula
   sha256 "a80d095a9764f0cda751f0fb2f88c83b11175698d6446ddd73d63bc1bd6e5231"
   license "MIT"
 
-  depends_on "openjdk"
-
   def install
     libexec.install "mfc.jar"
     (bin/"mfc").write <<~EOS
       #!/bin/bash
-      exec java -jar #{libexec}/mfc.jar "$@"
+      exec java -jar "#{libexec}/mfc.jar" "$@"
     EOS
     chmod 0555, bin/"mfc"
+  end
+
+  def caveats
+    <<~EOS
+      mfc requires Java 17 or newer.
+      You can install OpenJDK 17 with:
+        brew install openjdk@17
+      If you have multiple JDKs, make sure your JAVA_HOME points to a compatible JDK.
+    EOS
   end
 
   test do
