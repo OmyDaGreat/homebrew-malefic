@@ -1,8 +1,8 @@
 class Mfc < Formula
   desc "A multi-use general purpose terminal application!"
   homepage "https://github.com/OmyDaGreat/mfc"
-  url "https://github.com/OmyDaGreat/mfc/releases/download/v0.3.3/mfc-0.3.3.zip"
-  sha256 "5215c3344a33d852c7b3d65942db13e4dc197d14d2e196a00c5769d21cf0fd45"
+  url "https://github.com/OmyDaGreat/mfc/releases/download/v0.3.4/mfc-0.3.4.zip"
+  sha256 "55be62f5758ebc9ee5278c84e22d66900d3300287b9a079df2de3ba5b08b1953"
   license "MIT"
 
   def install
