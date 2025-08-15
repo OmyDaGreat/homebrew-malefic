@@ -1,8 +1,8 @@
 class Kommit < Formula
   desc "A conventional commit generator made with Kotlin! "
   homepage "https://github.com/OmyDaGreat/Kommit"
-  url "https://github.com/OmyDaGreat/Kommit/releases/download/v2.0.12/kommit-2.0.12.zip"
-  sha256 "0cf65d88bb94db746f51de7902a812c09bf6499fd9f8fca672bc8efc47fe6db9"
+  url "https://github.com/OmyDaGreat/Kommit/releases/download/v2.0.14/kommit-2.0.14.zip"
+  sha256 "cfba8b02ec3eef5605f515cb41344779c5368825ef1cca9d65d33df7e689c8d8"
   license "MIT"
 
   def install
