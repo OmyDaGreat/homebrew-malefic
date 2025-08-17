@@ -4,14 +4,14 @@ class Kommit < Formula
   license "MIT"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/OmyDaGreat/Kommit/releases/download/v3.0.2/kommit-macos-v3.0.2"
-    sha256 "1d04b6e316fa7af608560962493947b61bf73f9b8de568e75fd2900e7d227fe6"
+    url "https://github.com/OmyDaGreat/Kommit/releases/download/v3.0.3/kommit-macos-v3.0.3"
+    sha256 "717f16eb1b12e6e597d6930218848111a152221f2a9f55de8c5f1e290063f37d"
   elsif OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/OmyDaGreat/Kommit/releases/download/v3.0.2/kommit-macos-v3.0.2"
-    sha256 "2fd03b3dacba03ec7df1991588503da9be657736acfea0b9a31d3c7624c63772"
+    url "https://github.com/OmyDaGreat/Kommit/releases/download/v3.0.3/kommit-macos-v3.0.3"
+    sha256 "d7016a8715c9195f46ba5ac15a71591b01618184a942ab80f6eb7f108af47204"
   elsif OS.linux?
-    url "https://github.com/OmyDaGreat/Kommit/releases/download/v3.0.2/kommit-linux-v3.0.2"
-    sha256 "ed1e10b644342368241a3b69ebc60f101a31da93f74e30c82e108c4d0b441b8e"
+    url "https://github.com/OmyDaGreat/Kommit/releases/download/v3.0.3/kommit-linux-v3.0.3"
+    sha256 "a51a9032122b30abb75c2b950d6e18aa5914ca9dc7c810f3378d123b7a0ac5e5"
   end
 
   def install
