@@ -2,38 +2,119 @@
 :toc:
 :icons: font
 
-This is a https://brew.sh[Homebrew] tap for Malefic software, including the `mfc` terminal application.
+This Homebrew tap provides formulae for Malefic-related tools maintained by OmyDaGreat. It currently includes:
 
-== How to Use
+* mfc — a multi-use general-purpose terminal application written in Kotlin.
+* Kommit — a companion tool maintained at https://github.com/OmyDaGreat/Kommit.
 
-To use this tap and install `mfc`:
+icon:package[] Badges: (tap status) | (build/CI) | (license)
 
-[source,shell]
+== Quick start
+
+Tap the repository and install the tools you want:
+
+[source,bash]
 ----
+# Tap the repository (only needed once)
 brew tap OmyDaGreat/malefic
+
+# Install mfc
 brew install mfc
+
+# Install Kommit
+brew install kommit
+
+# Or install directly from the tap
+brew install OmyDaGreat/malefic/mfc
+brew install OmyDaGreat/malefic/kommit
 ----
+
+If a formula name differs from these (for example if upstream or this tap uses a different name), substitute the correct formula name shown in the Formula/ directory.
 
 == Formulae
 
-- `mfc` :: A multi-use general purpose terminal application written in Kotlin.
+* mfc — A multi-use general-purpose terminal application written in Kotlin. See the mfc upstream project for documentation and releases.
+* Kommit — A companion tool. Upstream repository: https://github.com/OmyDaGreat/Kommit. See the upstream repo for usage, release notes, and issues.
+
+Each formula in this tap installs a binary and (when applicable) prints caveats or post-install instructions. Consult the formula file or run `brew info <formula>` for details.
+
+== Usage
+
+After installation, run the commands from your terminal:
+
+[source,bash]
+----
+# Examples
+
+# Show help for mfc
+mfc --help
+
+# Show help for Kommit
+kommit --help
+
+# Run a typical workflow (example)
+kommit init
+mfc --connect
+----
+
+Replace the example commands above with the actual subcommands you need — check upstream docs for full usage.
 
 == Updating
 
-Formulae in this tap are updated automatically on new releases.
-If you need the latest version, run:
+This tap aims to track upstream releases. To refresh your local Homebrew data and update installed formulae:
 
-[source,shell]
+[source,bash]
 ----
 brew update
 brew upgrade mfc
+brew upgrade kommit
+
+# Or upgrade everything
+brew upgrade
 ----
+
+If a formula in this tap lags behind upstream, maintainers can add or update the formula to reference the newest release tarball/checksum. Automated CI may also update formulas when upstream releases are published.
 
 == Contributing
 
-Pull requests to add or update formulae are welcome!
-Please ensure formulae follow Homebrew best practices.
+Contributions are welcome. Recommended workflow:
+
+. Fork this repository.
+. Add or update formula files in the Formula/ directory following Homebrew style and best practices:
+
+[source]
+----
+- Use stable upstream release tarballs (not snapshots of default branches).
+- Include correct SHA256 checksums.
+- Avoid bundling large binary dependencies; prefer dependency declarations.
+----
+
+. Run `brew audit --strict --online Formula/<formula>.rb` locally when possible.
+. Open a pull request with a clear description and links to upstream releases.
+
+When proposing a new formula for an upstream project, include:
+
+* The upstream release URL and checksum.
+* Minimal, tested install steps.
+* Any caveats or service instructions.
+
+== CI / Automation
+
+Formula updates can be automated if upstream repositories publish releases and tags. If you maintain an upstream project and want automatic updates here, ensure releases are published and follow consistent tagging so automation tools can detect new versions.
 
 == License
 
-This tap and all included formulae are released under the MIT License, as shown in link:LICENSE[].
+This tap and the formulae maintained here are released under the MIT License. See LICENSE for details.
+
+== Support
+
+* For issues with formulas in this tap, open an issue in this repository.
+* For issues or feature requests specific to upstream projects:
+** mfc: open an issue in the mfc upstream repository (link in the formula or project docs).
+** Kommit: https://github.com/OmyDaGreat/Kommit/issues
+
+== Maintainers
+
+* OmyDaGreat (owner)
+
+If you want to help maintain a formula, open an issue or submit a PR indicating which formula you want to maintain and why.
