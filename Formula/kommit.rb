@@ -6,7 +6,7 @@ class Kommit < Formula
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/OmyDaGreat/Kommit/releases/download/v3.0.10/kommit-macos-arm64"
-    sha256 "0792b6f731567c7d44ca2303d74fc80cc55adb11e87fced627ab9bbe14515b96"
+    sha256 "11defddfaac96de7fb4fa630006d3e2cce7f70d63740cbbdd42b0b8d26a037d7"
   elsif OS.mac? && Hardware::CPU.intel?
     url "https://github.com/OmyDaGreat/Kommit/releases/download/v3.0.10/kommit-macos-x64"
     sha256 "429ffd1b8c93e0fb48fb305db4d71c3ff20cc15bacce2b8b7ba4c77524ce0dca"
