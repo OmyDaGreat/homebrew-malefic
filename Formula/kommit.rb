@@ -2,17 +2,17 @@ class Kommit < Formula
   desc "A conventional commit generator made with Kotlin!"
   homepage "https://github.com/OmyDaGreat/Kommit"
   license "MIT"
-  version "v3.0.14"
+  version "v3.0.15"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/OmyDaGreat/Kommit/releases/download/v3.0.14/kommit-macos-arm64"
-    sha256 "6b53867f8a4756f98141b94d2688a5de747ca5ff955ab07a0340c1c13bccd8a2"
+    url "https://github.com/OmyDaGreat/Kommit/releases/download/v3.0.15/kommit-macos-arm64"
+    sha256 "468279b06b4e291988c3bf2c68272a59722e1ce2a1000e65d32d51b510cdee16"
   elsif OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/OmyDaGreat/Kommit/releases/download/v3.0.14/kommit-macos-x64"
-    sha256 "67fc1c86657c1c8ddcf7a4106669352f6d844fbf0b96a2c9ded87749fb9debb1"
+    url "https://github.com/OmyDaGreat/Kommit/releases/download/v3.0.15/kommit-macos-x64"
+    sha256 "d2d312efba94223da4a685e9c83daefe77741c0a383c23ef50c7a74eea59bc89"
   elsif OS.linux?
-    url "https://github.com/OmyDaGreat/Kommit/releases/download/v3.0.14/kommit-linux-x64"
-    sha256 "2753158e974c8567a9663b5f0d48a38e252710da924139d69cdf6f4b1f1ec50b"
+    url "https://github.com/OmyDaGreat/Kommit/releases/download/v3.0.15/kommit-linux-x64"
+    sha256 "787c9473f4444e5711426e4c2aeea5e72abc499899209097977408a551d20ed3"
   end
 
   def install
