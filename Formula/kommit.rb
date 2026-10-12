@@ -2,13 +2,13 @@ class Kommit < Formula
   desc "A conventional commit generator made with Kotlin!"
   homepage "https://github.com/OmyDaGreat/Kommit"
   license "MIT"
-  version "v3.0.33"
+  version "v4.0.0"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/OmyDaGreat/Kommit/releases/download/v3.0.33/kommit-macos-arm64"
-    sha256 "81d0930c8c8b1051d94932a62c123e7232642746e8d672c1e6403917d110d449"
+    url "https://github.com/OmyDaGreat/Kommit/releases/download/v4.0.0/kommit-macos-arm64"
+    sha256 "e53040a12da832410bbb6304d6c3dbab4df715bb89104da91862ae69f0c7449a"
   elsif OS.linux?
-    url "https://github.com/OmyDaGreat/Kommit/releases/download/v3.0.33/kommit-linux-x64"
+    url "https://github.com/OmyDaGreat/Kommit/releases/download/v4.0.0/kommit-linux-x64"
     sha256 "8c6513d0c934435a281bf7acbde2adba064445b486b8ba3d84fadfef2c2d6b52"
   end
 
